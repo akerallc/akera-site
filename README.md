@@ -1,8 +1,8 @@
-# Astro Landing Page
+# Akera LLC
 
-An Astro + Tailwind CSS starter kit for landing pages.
+An Akera + Tailwind CSS starter kit for landing pages.
 
-![Screenshots of Astro Landing Page](screenshots.jpg)
+![Screenshots of Akera LLC](screenshots.jpg)
 
 ## Features
 
@@ -32,4 +32,4 @@ An Astro + Tailwind CSS starter kit for landing pages.
   - source: https://github.com/withastro/astro-og-image; note: this repo is not available anymore
 - moon image
   - source: https://unsplash.com/@nasa
-- other than that, a lot of material (showcase data, copy) was taken from official Astro sources, in particular https://astro.build/blog/introducing-astro/ and https://github.com/withastro/astro.build
+- other than that, a lot of material (showcase data, copy) was taken from official Akera sources, in particular https://astro.build/blog/introducing-astro/ and https://github.com/withastro/astro.build

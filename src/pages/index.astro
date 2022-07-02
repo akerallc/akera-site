@@ -9,9 +9,8 @@ import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { site } = Astro;
-const image = new URL("social.jpg", site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "Build fast websites, faster. Akera is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
 ---
 
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
@@ -21,7 +20,7 @@ const description =
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <title>Astro Landing Page</title>
+    <title>Akera LLC</title>
     <meta name="description" content={description} />
 
     <!-- fonts -->
@@ -45,10 +44,9 @@ const description =
     </noscript>
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="Akera" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
     <meta property="og:url" content={site} />
     <meta name="twitter:card" content="summary_large_image" />
 
