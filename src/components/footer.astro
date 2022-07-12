@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon";
-import HeroImage from "~/components/hero-image.astro";
+import HeroImageMoon from "~/components/hero-image-moon.astro";
+import HeroImageHyperSpace from "~/components/hero-image-hyperspace.astro";
 
 const links = [
   {
@@ -27,8 +28,11 @@ const links = [
 ---
 
 <footer class="relative flex items-center justify-center h-64">
-  <div class="absolute inset-0 overflow-hidden opacity-40">
-    <HeroImage />
+  <div id="footer-bg-fallback" class="absolute inset-0 overflow-hidden opacity-40 hidden">
+    <HeroImageMoon />
+  </div>
+  <div id="footer-bg" class="absolute inset-0 overflow-hidden opacity-40">
+    <HeroImageHyperSpace />
   </div>
   <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
     {links.map((link) => (
@@ -44,3 +48,15 @@ const links = [
     ))}
   </ul>
 </footer>
+
+<style>
+  @media (prefers-reduced-motion: reduce) {
+    #footer-bg-fallback {
+      @apply block;
+    }
+
+    #footer-bg {
+      @apply hidden;
+    }
+  }
+</style>
