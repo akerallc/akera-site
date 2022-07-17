@@ -1,6 +1,6 @@
 # Akera LLC
 
-An Astro + Tailwind CSS starter kit for landing pages.
+Astro + Tailwind CSS
 
 
 ## Features
