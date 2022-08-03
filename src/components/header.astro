@@ -3,9 +3,9 @@ import { Icon } from "astro-icon";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 
 const navItems = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
+  { title: "Services", url: "#services" },
   { title: "Showcase", url: "#showcase" },
+  { title: "Contact", url: "#contact" }
 ];
 ---
 
@@ -22,13 +22,13 @@ const navItems = [
   <div class="flex items-center gap-6">
     <nav class="hidden sm:block">
       <ul class="flex items-center gap-6">
-        <!-- {navItems.map(({ title, url }) => (
+        {navItems.map(({ title, url }) => (
           <li>
             <a class="text-sm" href={url}>
               {title}
             </a>
           </li>
-        ))} -->
+        ))}
       </ul>
     </nav>
     <button
@@ -59,13 +59,13 @@ const navItems = [
           </div>
           <nav>
             <ul class="flex flex-col">
-              <!-- {navItems.map(({ title, url }) => (
+              {navItems.map(({ title, url }) => (
                 <li>
                   <a class="block py-4 text-xl text-center" href={url}>
                     {title}
                   </a>
                 </li>
-              ))} -->
+              ))}
             </ul>
           </nav>
         </div>

@@ -1,32 +1,22 @@
 [
   {
-    "title": "Demo 1",
-    "image": "src/data/showcase/images/demo-1.png",
-    "url": "https://akera.tech/"
+    "title": "Park Lawless & Tremonti",
+    "image": "src/data/showcase/images/parklawless.com.png",
+    "url": "https://parklawless.com"
   },
   {
-    "title": "Demo 2",
-    "image": "src/data/showcase/images/demo-2.png",
-    "url": "https://akera.tech/"
+    "title": "ZAYTOON'S KABOB",
+    "image": "src/data/showcase/images/zaytoonskabob.com.png",
+    "url": "https://www.zaytoonskabob.com"
   },
   {
-    "title": "Demo 3",
-    "image": "src/data/showcase/images/demo-3.png",
-    "url": "https://akera.tech/"
+    "title": "JAMISON EMPTING CRONIN, LLP",
+    "image": "src/data/showcase/images/jec-legal.com.png",
+    "url": "https://www.jec-legal.com"
   },
   {
-    "title": "Demo 4",
-    "image": "src/data/showcase/images/demo-4.png",
-    "url": "https://akera.tech/"
-  },
-  {
-    "title": "Demo 5",
-    "image": "src/data/showcase/images/demo-5.png",
-    "url": "https://akera.tech/"
-  },
-  {
-    "title": "Demo 6",
-    "image": "src/data/showcase/images/demo-6.png",
-    "url": "https://akera.tech/"
+    "title": "ROBERT LAURIA",
+    "image": "src/data/showcase/images/robertlauria.com.png",
+    "url": "https://www.robertlauria.com"
   }
 ]

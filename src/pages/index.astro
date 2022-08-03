@@ -1,11 +1,10 @@
 ---
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+import Services from "~/components/services.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
+import Contact from "~/components/contact.astro";
 import "~/styles/index.css";
 
 const { site } = Astro;
@@ -79,12 +78,11 @@ const description =
   >
     <Header />
     <Splash />
-    <!-- <div class="px-8 py-32 space-y-24">
-      <Intro />
-      <Features />
-      <Compatibility />
+    <div class="px-8 py-32 space-y-24">
+      <Services />
       <Showcase />
-    </div> -->
+      <Contact />
+    </div>
     <Footer />
   </body>
 </html>

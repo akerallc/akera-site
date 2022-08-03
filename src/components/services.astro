@@ -1,0 +1,60 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Software Development",
+    description:
+      "We develop software to improve your workplace's productivity so you can focus your time on getting your job done",
+    icon: "mdi:directions-fork",
+  },
+  {
+    title: "Network Architecture / Security",
+    description:
+      "We design your network for optimal speed and security",
+    icon: "mdi:graph",
+  },
+  {
+    title: "Computer Built / Repair",
+    description:
+      "We build and repair computers of any type to fulfill your gaming, video edition, or professional needs",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "Web Development",
+    description:
+      "We build and ship your modern, lightning-fast website",
+    icon: "mdi:search-web",
+  },
+  {
+    title: "Graphic Design",
+    description:
+      "We design digital media such as logos, business cards, and advertisements",
+    icon: "mdi:feather",
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "We improve your website's search engine optimization (SEO) and use internet marketing to attract new customers to your business",
+    icon: "mdi:account-group",
+  },
+];
+---
+
+<ContentSection title="Services" id="services">
+  <Fragment slot="lead">
+    Akera offers a large array of IT services.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {features.map(({ title, description, icon }) => (
+      <li class="flex flex-col items-center gap-4 p-6 border border-default bg-offset">
+        <div class="w-16 h-16 p-3 border-2 border-current rounded-full">
+          <Icon name={icon} />
+        </div>
+        <p class="text-xl font-extrabold text-center">{title}</p>
+        <p class="text-sm text-center text-offset">{description}</p>
+      </li>
+    ))}
+  </ul>
+</ContentSection>
