@@ -4,18 +4,34 @@ import ContentSection from "~/components/content-section.astro";
 ---
 
 <ContentSection title="Contact Us" id="contact">
-  <a
-      href="https://calendly.com/akerallc/30min" target="_blank"
-      class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
-    >
-    <Icon pack="mdi" name="calendar" class="h-8" />
-    <span>Schedule a meeting</span>
-  </a>
-  <a
-      href="https://get.anydesk.com/HOUhnDzv/Akera_LLC_Remote.exe"
-      class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
-    >
-    <Icon name="anydesk" class="h-8" />
-    <span>Download AnyDesk</span>
-  </a>
+  <div class="contactBtns">
+    <a
+        href="https://calendly.com/akerallc/30min" target="_blank"
+        class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
+      >
+      <Icon pack="mdi" name="calendar" class="h-8" />
+      <span>Schedule a Meeting</span>
+    </a>
+    <a
+        href="https://get.anydesk.com/HOUhnDzv/Akera_LLC_Remote.exe"
+        class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
+      >
+      <Icon name="anydesk" class="h-8" />
+      <span>Remote Support</span>
+    </a>
+  </div>
 </ContentSection>
+<style>
+  .contactBtns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contactBtns {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+</style>
