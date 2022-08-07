@@ -4,21 +4,49 @@ import ContentSection from "~/components/content-section.astro";
 ---
 
 <ContentSection title="Contact Us" id="contact">
-  <div class="contactBtns">
-    <a
-        href="https://calendly.com/akerallc/30min" target="_blank"
-        class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
-      >
-      <Icon pack="mdi" name="calendar" class="h-8" />
-      <span>Schedule a Meeting</span>
-    </a>
-    <a
-        href="https://get.anydesk.com/HOUhnDzv/Akera_LLC_Remote.exe"
-        class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
-      >
-      <Icon name="anydesk" class="h-8" />
-      <span>Remote Support</span>
-    </a>
+  <div class="flex flex-col gap-8">
+    <form class="contactForm flex flex-col gap-10 p-6 border-2 border-current" name="contact" netlify>
+      <div>
+        <label>Name</label>
+        <input class="contactField" type="text" name="name" required/>
+      </div>
+      <div>
+        <label>Email</label>
+        <input class="contactField" type="email" name="email" required/>
+      </div>
+      <div>
+        <label>Phone <span class="text-xs">(optional)</span></label>
+        <input class="contactField" type="tel" name="phone"/>
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea class="contactField" type="text" name="message" required></textarea>
+      </div>
+      <div>
+        <button
+            class="contactField flex items-center justify-center gap-3 px-6 py-4 border-2 border-current" type="submit"
+          >
+          <Icon pack="bi" name="send" class="h-8" />
+          <span>Submit</span>
+        </button>
+      </div>
+    </form>
+    <div class="contactBtns">
+      <a
+          href="https://calendly.com/akerallc/30min" target="_blank"
+          class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
+        >
+        <Icon pack="mdi" name="calendar" class="h-8" />
+        <span>Schedule a Meeting</span>
+      </a>
+      <a
+          href="https://get.anydesk.com/HOUhnDzv/Akera_LLC_Remote.exe"
+          class="flex items-center justify-center gap-3 px-6 py-4 border-2 border-current"
+        >
+        <Icon name="anydesk" class="h-8" />
+        <span>Remote Support</span>
+      </a>
+    </div>
   </div>
 </ContentSection>
 <style>
@@ -26,6 +54,17 @@ import ContentSection from "~/components/content-section.astro";
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  .contactForm div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactField{
+    background: none;
+    border: 2px solid currentColor;
+    outline-width: 0;
   }
 
   @media only screen and (max-width: 600px) {
