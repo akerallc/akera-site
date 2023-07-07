@@ -18,5 +18,10 @@
     "title": "ROBERT LAURIA",
     "image": "src/data/showcase/images/robertlauria.com.png",
     "url": "https://www.robertlauria.com"
+  },
+  {
+    "title": "Law Office of Geoff Davis",
+    "image": "src/data/showcase/images/gdavis.jpg",
+    "url": "https://gdavis.netlify.app"
   }
 ]
